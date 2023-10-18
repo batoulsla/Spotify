@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Button, Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/Spotify_logo.svg";
 import styled from "@emotion/styled";
-import Music from "../assets/landing.svg";
+import Music from "../assets/landing.png";
 import SpotifyLogo from "../assets/SpotifyIcon.svg";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
@@ -142,7 +142,7 @@ const Home = () => {
     marginLeft:isMobile?"15%":"0",
     }}
   >
-    <img src={Music} alt="Music" style={{ maxWidth: "95%", maxHeight: "95%" }} />
+    <img src={Music} alt="Music" style={{ width: isMobile ? "95%" : "672px", height:isMobile?"90%":"500px", }} />
   </div>
 </Col>
 
